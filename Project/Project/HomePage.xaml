@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.HomePage"
+             Title="Dog Center">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Dog Center!" TextColor="Blue"   VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" FontSize="Large" />
+            <Image Source="https://p9.itc.cn/q_70/images03/20201110/4c114171608f4c4db6926a7f2c56e128.jpeg" Aspect="AspectFill" Margin="0"/>
+            <Label Text="Dog Center is an app to help those who want to adopt a dog !" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" TextColor="DodgerBlue"/>
+            <Button Text="Already have an account? Click to sign in" TextColor="WhiteSmoke" HorizontalOptions="Center" BackgroundColor="#BF043055" Clicked="Buttonsignin_Clicked"/>
+            <Button Text="Don't have an account? Click to sign up" TextColor="WhiteSmoke" HorizontalOptions="Center" BackgroundColor="#BF043055" Clicked="Buttonsignup_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

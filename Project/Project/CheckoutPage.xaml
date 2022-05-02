@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Project.CheckoutPage"
+             Title="Admin Page">
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <Label Text="      Id: Name:                Phonenumber :     Dog Id :   Address : " TextColor="Black" FontAttributes="Bold" FontSize="10"/>
+            <ListView x:Name="checkoutListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15,0" Orientation="Horizontal">
+                                <Label Text="{Binding Id}"/>
+                                <Label Text="{Binding FirstName}"/>
+                                <Label Text="{Binding LastName}"/>
+                                <Label Text="{Binding Phone}"/>
+                                <Label Text="{Binding DogId}"/>
+                                <Label Text="{Binding Address}"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

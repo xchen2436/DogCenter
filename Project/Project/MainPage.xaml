@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.MainPage"
+             Title="Shopping Page">
+
+    <CarouselView x:Name="carouselview">
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Label Text="Id : " TextColor="Black" />
+                    <Label Text="{Binding id}"  TextColor="Black" />
+                    <Label Text="weight : " TextColor="Black" />
+                    <Label Text="{Binding weight.imperial}" TextColor="Black" />
+                    <Label Text="Name : " TextColor="Black" />
+                    <Label Text="{Binding name}" TextColor="Black" />
+                    <Label Text="bred_for : " TextColor="Black" />
+                    <Label Text="{Binding bred_for}" TextColor="Black" />
+                    <Label Text="Temperament : " TextColor="Black" />
+                    <Label Text="{Binding temperament}" TextColor="Black" />
+                    <Label Text="Life span : " TextColor="Black" />
+                    <Label Text="{Binding life_span}" TextColor="Black" />
+                    <Image WidthRequest="200" HeightRequest="100" Source="{Binding image.url}"></Image>
+                    <Button Text="Buy" Clicked ="ButtonBuy_Clicked"></Button>
+                    <Button Text="Sign out" Clicked="Buttonsignout_Clicked"></Button>
+                </StackLayout>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+</ContentPage>

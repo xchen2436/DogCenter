@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="#BF043055" HasShadow="True">
+                <StackLayout Orientation="Vertical" Spacing="30">
+                    <Entry x:Name="Email"  Placeholder="Enter your email"   
+                           PlaceholderColor="White" HeightRequest="50"   
+                           Keyboard="Email"  
+                           TextColor="White"/>
+                    <Entry x:Name="Password"  Placeholder="Enter your password"   
+                           PlaceholderColor="White" HeightRequest="50"   
+                           IsPassword="True"  
+                           TextColor="White"/>
+                    <Button Text="Sign in" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"  
+                    BackgroundColor="#088da5"
+                        Clicked="LoginEvent"/>
+                    <Button Text="Don't have an account" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"  
+                    BackgroundColor="#088da5"
+                        Clicked="OnSignUpButtonClicked"/>
+                    <Image Source="https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/0e5/afd/fbb/4f94e8b794858e8f8ebfb05.jpg_1280_1280_3_72c9.jpg" Aspect="AspectFill" Margin="0"/>
+
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
